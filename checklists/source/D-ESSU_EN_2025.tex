@@ -1,0 +1,325 @@
+\def\papersize{5}
+\input{preamble.inc}
+
+\begin{document}
+
+\title{D-ESSU  -  BR23  -  Bristell B23-915 IFR}
+\versionchecklist{0.1.1}
+\datechecklist{06/2025}
+
+\begin{checklist}{Before Enginge Start}
+  \item{Preflight Inspection  }{completed}
+    \hint{According to Handbook, Cpt. 4.3}
+  \item{Rudder Pedal Position}{set}
+  \item{Seat belts}{tighten}
+  \item{Flight Controls}{checked}
+  \item{Canopy}{locked}
+  \item{Parking Break}{set}
+    \hint{Apply pressuere and set, then 'pump'.}
+  \decision{Use of ext. Power:}
+    \step{See notes in Handbook Cpt. 4.4.2}
+\end{checklist}
+
+\begin{checklist}{Enginge Start}
+  \item{Circuit Breakers}{checked}
+  \item{Backup Battery}{on}
+  \item{GTN650Xi, MFD, EIS}{booting}
+  \decision{MFD}
+    \step{Wait for boot sequence.}
+    \step{Check FUEL QTY!}
+    \step{Conf. amber "BACKUP BATT" msg.}
+    \step{Conf. CO vallue 255ppm, then decr.}
+
+  \item{Master Switch}{ON}
+
+  \decision{MFD}
+    \step{Conf. amber "BACKUP BATT" msg.}
+    \step{CAS message OFF}
+
+  \item{Backup Battery}{off}
+  \item{GEN A/B}{ON}
+  \item{Voltage M }{Min. 12 V}
+    \hint{(Batt/Alt-C Bus)}
+  \item{Fuel Selector}{more empty tank}
+  \item{Propeller Control}{fine}
+    \hint{Fully forward}
+  \item{Throttle}{closed}
+  \item{Strobe Light}{ON}
+  \item{LANE A / LANE B}{on}
+  \item{Main Fuel Pump}{on} 
+
+to be continued...
+\end{checklist}
+
+\begin{checklist}{Continue: Enginge Start}
+  \item{Start Power}{ON (hold!)}
+  \decision{LANE A/B Lamps:} 
+    \step{wait till lamps turn OFF}
+  \item{MFD Engige Indication}{checked}
+    \hint{-> active and correct}
+    \hint{-> Fuel Pressure in Limits}
+  \decision{Throttle}
+    \step{Coolant Tmp. <0$^{\circ}$C Thrtl. >= 60\%}
+    \step{Coolant Tmp. >0$^{\circ}$C Thrtl. ca. 45\%}
+  \item{Starter}{Pressed}
+    \hint{Hold "Start Power" and press "START"}
+    \hint{until Eng. fires. Then release}
+    \hint{Start-Button and "Start Power".}
+  \item{Oil Pressure}{Checked}
+  \item{Throttle}{idle}
+  \item{LANE A / B}{Ind. Lamp OFF}
+    \hint{Both switches remain ON!}
+    \hint{The indicator lamps should go out.}
+  \item{Throttle}{2500 RPM for 10 sec}
+  \item{Voltage M / Voltage B}{13.4 / 14.0 V}
+\end{checklist}
+
+\begin{checklist}{After Engine Start}
+  \item{Avionics}{ON}
+  \item{ALT C}{ON}
+  \item{Voltage M}{checked}
+    \hint{Increaseing, nom. 13.8 V}
+  \item{EFIS}{ON}
+  \item{EFIS Power Source}{Checked}
+    \hint{Verify NOT on internal Batt.}
+  \item{Baro PFD + MFD}{set}
+\end{checklist}
+
+\begin{checklist}{Engine Warm-Up}
+  \decision{Throttle}
+    \step{2500 RPM until oil temp > 50$^{\circ}$C.}
+    \step{Then set throttle to IDLE.}
+\end{checklist}
+
+\begin{checklist}{Before Taxiing}
+  \item{Nav Light (at night)}{as required}
+  \item{Landing-/Taxi-Light}{as required}
+    \hint{A/C moving: Lights on!}
+  \item{PFD, stby EFIS, MFD}{checked}
+    \hint{ADHRS stabilised.}
+\end{checklist}
+
+\begin{checklist}{Taxiing}
+  \hint{Keep RPM < 2500, taxiing with}
+  \hint{walking speed! Check breaks \& steering.}
+  \item{Ground Control}{checked}
+  \item{Brakes}{checked}
+  \item{Indications}{checked}
+    \hint{Attitude/direction: PFD, MFD, stby EFIS}
+\end{checklist}
+
+\begin{checklist}{Engine Run Up}
+  \item{Parking Brake}{set}
+  \item{Oil Temperature}{min 50$^{\circ}$C}
+  \item{Propeller Control}{fine}
+    \hint{fully forwaard}
+  \item{Landing-/Taxi-Light}{as required}
+    \hint{A/C standing still: Lights off!}
+
+  \decision{Pump and Fuel Supply Check}
+    \step{Throttle: 3000 RPM}
+    \step{AUX Pump: ON, pressuere in limits}
+    \step{AUX Pump Light: ON}
+    \step{Main Fuel Pump: OFF}
+    \step{Pressure still within limits: CHECKED}
+    \step{Mail Fuel Pump: ON}
+
+  \item{Fuel Tank}{Sides Switched}
+  \item{Fuel Pressure}{Checked}
+  \item{Fuel Tank}{fullest tank}
+to be continued...
+\end{checklist}
+\begin{checklist}{Continue: Engine Run Up}
+  \decision{Wastegate/PVC/Lane}
+    \step{Confirm BRAKES are fully set.}
+    \step{Throttle: FULL THROTTLE}
+    \step{RPM: min 5700, max 5800}
+    \step{Manifold Pressure: within LIMITS}
+    \step{Manifold Temp: Below 65$^{\circ}$C}
+    \step{Throttle: reduce to 4700 RPM}
+    \step{LANE A:  OFF}
+    \step{Max drop 250 RPM (aft. 15 sec.)}
+    \step{Check ENG Params in Limits!}
+    \step{LANE A:  ON (wait 3 sec.)}
+    \step{LANE B:  OFF}
+    \step{Max drop 250 RPM (aft. 15 sec.)}
+    \step{Check ENG Params in Limits!}
+    \step{LANE B:  ON (wait 3 sec.)}
+  \item{Propeller Control}{checked}
+    \hint{Cycle 3 times. Move lever slow }
+    \hint{backwards, fast forward.}
+  \item{Throttle}{IDLE CHECK}
+  \item{Trhottle}{Set 3000 RPM}
+\end{checklist}
+
+\begin{checklist}{Before Take-Off}
+  \item{Instruments}{checked}
+  \item{Pitot-heat}{as required}
+  \item{Flight Controls}{checked}
+  \item{Cockpit Canopy}{closed \& locked}
+  \item{Seat Belts}{tightened}
+  \item{AEPS System}{unlocked}
+    \hint{store pin in middle compartment}
+  \item{Engine Instruments}{checked}
+  \item{Flaps}{FLAPS 1}
+  \decision{Autopilot}
+    \step{Autopilot Switch: ON}
+    \step{Engage, for each test}
+    \step{Check if AP can be overpowered!}
+    \step{Check AP Disconnect by:}
+    \step{Any Trim input, AP-Disc. button.}
+  \item{Trim}{T/O Position}
+  \item{Autopilot Switch}{OFF}
+  \item{Autopilot Panel LEDs}{ALL OFF}
+\end{checklist}
+
+\begin{checklist}{TAKE-OFF}
+  \item{Landing-/Taxi-Light}{as required}
+      \hint{A/C moving: Lights on!}
+  \item{Brakes}{released}
+  \item{Propeller Control}{full forward}
+  \item{Throttle}{full power}
+  \item{Airspeed Indication}{alive}
+  \decision{TAKE-OFF SPEEDS}
+  \item{Nosewheel Unstick}{50 KIAS}
+  \item{Lift-Off}{60 KIAS}
+  \item{Initial Climb}{70 KIAS}
+  \item{Flaps retract}{75 KIAS}
+    \hint{Not less than 150 ft AGL}
+  \item{Climb}{v$_{y}$78~KIAS} 
+\end{checklist}
+
+\begin{checklist}{Climb}
+  \decision{Climbing Speeds}
+    \step{v$_{y}$ best ROC 78~KIAS} 
+    \step{v$_{x}$ best AOC 63~KIAS} 
+  \item{Throttle}{Full Forward}
+  \decision{Prop Control}
+    \step{Set Engine Speed}
+    \step{max. 5800 RPM for 5 min}
+    \step{max continuous 5500 RPM}
+  \item{instruments}{T \& P in limits}
+  \item{AUX Pump}{off}
+  \item{Fuel Pressure}{checked}
+  \item{Landing Light}{As required}
+\end{checklist}
+
+\begin{checklist}{Cruise}
+  \decision{Fuel Selector}
+    \step{Switch every 25min, latest.}
+    \step{Check for balanced quantity!}
+    \step{See notes in AFM Cpt. 4.4.13.}
+  \item{Throttle}{As required}
+  \item{Prop Control}{max. 5500 RPM}
+  \item{Fuel Flow}{Checked}
+  \item{Pitot Heat}{As Required}
+
+  \decision{Changes in PWR:}
+  \item{\textcolor{red}{PWR$\Uparrow$}}{1. RPM - 2. MAP}
+  \item{\textcolor{blue}{PWR$\Downarrow$}}{1. MAP - 2. RPM}
+    
+\end{checklist}
+
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|c|c|c|}
+  \hline
+  \cellcolor{black!90}\color{white}\textbf{PWR} & \cellcolor{black!90}\color{white}\textbf{RPM}  & \cellcolor{black!90}\color{white}\textbf{MAP} \\ \hline
+
+  100~\% & 5500~RPM & 40.5~inHg \\ \hline
+  75~\% & 5000~RPM & 33.0~inHg \\ \hline
+  59~\% & 4500~RPM & 25.5~inHg \\ \hline
+
+  \end{tabular}
+\end{table}
+
+
+\begin{checklist}{Decent}
+  \item{Throttle}{15...17~inhg}
+  \item{Prop Control}{Max 5000 RPM}
+  \item{Airspeed}{90...100~KIAS}
+  \item{Pitot-Heat}{As Required}
+  \hint{Do NOT reduce to IDLE in}
+  \hint{cold OAT environments!}
+\end{checklist}
+
+\begin{checklist}{Before Landing}
+  \item{Seat Belt}{tightened}
+  \item{Cockpit}{prepared}
+  \item{Autopilot}{disengaged}
+  \item{Autopilot Switch}{OFF}
+  \item{Throttle}{as required}
+  \item{Speed}{83~KIAS}
+  \item{Flaps}{FLAPS 1}
+  \item{Trim}{as required}
+  \item{Landing Light}{ON}
+  \item{AUX Pump}{ON}
+  \decision{Final Approach}
+  \item{Flaps}{FLAPS 2}
+  \item{Speed}{65~KIAS}
+  \item{Trim}{As Required}
+  \item{Prop Control}{FINE (forward)}
+  \item{Throttle}{SET}
+    \step{Approx. 7~inHG,}
+    \step{Maint. RPM > 2600}
+\end{checklist}
+
+\begin{checklist}{Balked Landing / Go-Around}
+  \item{Throttle}{full forward}
+  \item{Speed}{70~KIAS}
+  \item{Flaps}{FLAPS 1}
+  \item{Trim}{adjusted}
+  \item{Climb}{v$_{y}$78~KIAS} 
+    \hint{Follow T/O Procedures}
+\end{checklist}
+
+\begin{checklist}{Landing}
+  \item{Throttle}{closed}
+  \item{Touch-down}{MAIN WHEELS}
+  \item{Brakes}{as needed}
+  \item{Flaps}{retract}
+\end{checklist}
+
+\begin{checklist}{After Landing}
+  \item{Flaps}{RETRACTED}
+  \item{Engine Speed}{SET}
+    \hint{Taxi with walking speed!}
+  \item{Landing-/Taxi-Light}{ON}
+  \item{Pitot Heat}{OFF}
+  \item{AUX Fuel Pump}{OFF}
+\end{checklist}
+
+\begin{checklist}{Shutdown}
+  \item{Parking Brake}{SET}
+  \item{Landin-/Taxi-Light}{OFF}
+  \item{Propeller Control}{FINE}
+  \item{Engine Speed}{IDLE}
+  \item{Instruments}{ALL IN LIMITS}
+  \item{ALT-C}{OFf}
+    \hint{Check Volts M >= 13.4~V!}
+  \decision{min. 2min COOL-DOWN!}
+    \step{Use timer in EFIS!}
+  \item{Line A}{OFF}
+  \item{after 2 sec, LAMP:}{on}
+  \item{Line B}{OFF}
+  \item{Main Fuel Pump}{Off}
+  \item{Avionics}{OFF}
+  \item{EFIS}{OFF}
+  \item{GEN A/B}{OFF}
+  \item{Master}{OFF}
+  \item{AEOS Locking Pin}{inserted}
+  \item{Parking Brake}{as required}
+\end{checklist}
+
+\begin{checklist}{Parking and tie-down}
+  \item{LANE Switches Checked}{ALL OFF}
+  \item{Master Switch Checked}{OFF}
+  \item{Parking Brake}{SET}
+    \step{For short time parking only,}
+    \step{for long time, use chocks!}
+  \item{Canopy}{closed \& locked}
+  \decision{Aircraft SECURED}
+\end{checklist}
+
+
+\end{document}
