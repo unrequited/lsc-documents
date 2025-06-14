@@ -4,7 +4,7 @@
 \begin{document}
 
 \title{D-ESSU  -  BR23  -  Bristell B23-915 IFR}
-\versionchecklist{0.1.1}
+\versionchecklist{0.1.12}
 \datechecklist{06/2025}
 
 \begin{checklist}{Before Enginge Start}
@@ -15,7 +15,7 @@
   \item{Flight Controls}{checked}
   \item{Canopy}{locked}
   \item{Parking Break}{set}
-    \hint{Apply pressuere and set, then 'pump'.}
+    \hint{Apply pressure and set, then 'pump'.}
   \decision{Use of ext. Power:}
     \step{See notes in Handbook Cpt. 4.4.2}
 \end{checklist}
@@ -48,7 +48,7 @@
   \item{LANE A / LANE B}{on}
   \item{Main Fuel Pump}{on} 
 
-to be continued...
+Continues next column!
 \end{checklist}
 
 \begin{checklist}{Continue: Enginge Start}
@@ -58,35 +58,38 @@ to be continued...
   \item{MFD Engige Indication}{checked}
     \hint{-> active and correct}
     \hint{-> Fuel Pressure in Limits}
-  \decision{Throttle}
-    \step{Coolant Tmp. <0$^{\circ}$C Thrtl. >= 60\%}
-    \step{Coolant Tmp. >0$^{\circ}$C Thrtl. ca. 45\%}
-  \item{Starter}{Pressed}
-    \hint{Hold "Start Power" and press "START"}
+  \decision{Throttle Lever:}
+    \step{Coolant/Oil \textcolor{blue}{Tmp. <10$^{\circ}$C} >= 55\%}
+    \step{Coolant/Oil \textcolor{red}{Tmp. >10$^{\circ}$C} ca. 45\%}
+    \hint{\% as indicated as "T" on MFD.}
+    \hint{See HINT and Start Performance Chart }
+    \hint{in Handbook Cpt. 4.4.3 on P. 4-8!}
+
+  \decision{ENGINE START:}
+    \hint{Hold "Start Power", THEN press "START"}
     \hint{until Eng. fires. Then release}
     \hint{Start-Button and "Start Power".}
-  \item{Oil Pressure}{Checked}
   \item{Throttle}{idle}
+  \item{Oil Pressure}{Checked}
   \item{LANE A / B}{Ind. Lamp OFF}
     \hint{Both switches remain ON!}
-    \hint{The indicator lamps should go out.}
+    \hint{The Indicator Lamps should go out.}
   \item{Throttle}{2500 RPM for 10 sec}
   \item{Voltage M / Voltage B}{13.4 / 14.0 V}
 \end{checklist}
 
 \begin{checklist}{After Engine Start}
   \item{Avionics}{ON}
-  \item{ALT C}{ON}
+  \item{ALT-C}{ON}
   \item{Voltage M}{checked}
-    \hint{Increaseing, nom. 13.8 V}
+    \hint{Increasing, nom. 13.8 V}
   \item{EFIS}{ON}
   \item{EFIS Power Source}{Checked}
     \hint{Verify NOT on internal Batt.}
   \item{Baro PFD + MFD}{set}
-\end{checklist}
+    \hint{StbyEFIS, GTN are synced. MFD isn't!}
 
-\begin{checklist}{Engine Warm-Up}
-  \decision{Throttle}
+  \decision{Engine Warm-Up:}
     \step{2500 RPM until oil temp > 50$^{\circ}$C.}
     \step{Then set throttle to IDLE.}
 \end{checklist}
@@ -121,17 +124,18 @@ to be continued...
     \step{AUX Pump: ON, pressuere in limits}
     \step{AUX Pump Light: ON}
     \step{Main Fuel Pump: OFF}
-    \step{Pressure still within limits: CHECKED}
+    \step{Pressure still in limits: CHECKED}
     \step{Mail Fuel Pump: ON}
 
   \item{Fuel Tank}{Sides Switched}
   \item{Fuel Pressure}{Checked}
   \item{Fuel Tank}{fullest tank}
-to be continued...
+
+Continues next column!
 \end{checklist}
 \begin{checklist}{Continue: Engine Run Up}
   \decision{Wastegate/PVC/Lane}
-    \step{Confirm BRAKES are fully set.}
+    \step{Verify BRAKES are FULLY set!}
     \step{Throttle: FULL THROTTLE}
     \step{RPM: min 5700, max 5800}
     \step{Manifold Pressure: within LIMITS}
@@ -146,8 +150,8 @@ to be continued...
     \step{Check ENG Params in Limits!}
     \step{LANE B:  ON (wait 3 sec.)}
   \item{Propeller Control}{checked}
-    \hint{Cycle 3 times. Move lever slow }
-    \hint{backwards, fast forward.}
+    \hint{Cycle 3 times. Move lever SLOWLY}
+    \hint{backwards, but fast forward.}
   \item{Throttle}{IDLE CHECK}
   \item{Trhottle}{Set 3000 RPM}
 \end{checklist}
@@ -162,6 +166,10 @@ to be continued...
     \hint{store pin in middle compartment}
   \item{Engine Instruments}{checked}
   \item{Flaps}{FLAPS 1}
+
+Continues next page!
+\end{checklist}
+\begin{checklist}{Continue: Before Take-Off}
   \decision{Autopilot}
     \step{Autopilot Switch: ON}
     \step{Engage, for each test}
@@ -174,12 +182,11 @@ to be continued...
 \end{checklist}
 
 \begin{checklist}{TAKE-OFF}
-  \item{Landing-/Taxi-Light}{as required}
-      \hint{A/C moving: Lights on!}
+  \item{Landing-/Taxi-Light}{ON}
   \item{Brakes}{released}
   \item{Propeller Control}{full forward}
   \item{Throttle}{full power}
-  \item{Airspeed Indication}{alive}
+  \item{Airspeed Indication}{checked: alive}
   \decision{TAKE-OFF SPEEDS}
   \item{Nosewheel Unstick}{50 KIAS}
   \item{Lift-Off}{60 KIAS}
@@ -300,7 +307,7 @@ to be continued...
   \decision{min. 2min COOL-DOWN!}
     \step{Use timer in EFIS!}
   \item{Line A}{OFF}
-  \item{after 2 sec, LAMP:}{on}
+  \item{after 2 sec, LAMP:}{checked on}
   \item{Line B}{OFF}
   \item{Main Fuel Pump}{Off}
   \item{Avionics}{OFF}
