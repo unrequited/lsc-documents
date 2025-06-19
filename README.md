@@ -12,5 +12,7 @@ Here you'll find checklists for:
 2. D-MMDX - C42  Comco Icarus C-42B  (DE)
 3. D-MMDY - PNR2 Alpi Pioneer 200 (DE)
 4. D-MMDY - PNR2 Alpi Pioneer 200 (EN)
+
+For the checklists a template (preamble and makefile) which is a fork from [Sophie's "checklists"](https://github.com/miss-sophie/checklists) was used. 
    
 ---
