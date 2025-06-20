@@ -4,7 +4,7 @@
 \begin{document}
 
 \title{D-ESSU  -  BR23  -  Bristell B23-915 IFR}
-\versionchecklist{EN-1.3.24}
+\versionchecklist{EN-2.1.6}
 \datechecklist{06/2025}
 
 \begin{checklist}{Before Engine Start}
@@ -29,13 +29,11 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
     \step{Check FUEL QTY!}
     \step{Conf. amber "BACKUP BATT" msg.}
     \step{Conf. CO value 255\,ppm, then decr.}
-
   \item{Master Switch}{ON}
-
   \decision{MFD}
     \step{Conf. amber "BACKUP BATT" msg.}
     \step{CAS message OFF}
-
+    \step{Note down Total\,Hours from MFD!}
   \item{Backup Battery}{off}
   \item{GEN A/B}{ON}
   \item{Voltage M }{Min. 12\,V}
@@ -88,7 +86,6 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
     \hint{Verify NOT on internal Battery}
   \item{Baro PFD + MFD}{set}
     \hint{StbyEFIS, GTN are synced. MFD isn't!}
-
   \decision{Engine Warm-Up:}
     \step{2500\,RPM until oil temp > 50\,$^{\circ}$C.}
     \step{Then set throttle to IDLE.}
@@ -117,7 +114,6 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
     \hint{fully forwaard}
   \item{Landing-/Taxi-Light}{as required}
     \hint{A/C standing still: Lights off!}
-
   \decision{Pump and Fuel Supply Check}
     \step{Throttle: 3000\,RPM}
     \step{AUX Pump: ON, pressuere in limits}
@@ -125,7 +121,6 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
     \step{Main Fuel Pump: OFF}
     \step{Pressure still in limits: CHECKED}
     \step{Mail Fuel Pump: ON}
-
   \item{Fuel Tank}{Sides Switched}
   \item{Fuel Pressure}{Checked}
   \item{Fuel Tank}{fullest tank}
@@ -133,13 +128,8 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
 -- Continues next column!
 \end{checklist}
 \begin{checklist}{Continue: Engine Run Up}
-  \decision{Wastegate/PVC/Lane}
-    \step{Verify BRAKES are FULLY set!}
-    \step{Throttle: FULL THROTTLE}
-    \step{RPM: min. 5700, max. 5800}
-    \step{Manifold Pressure: within LIMITS}
-    \step{Manifold Temp: Below 65\,$^{\circ}$C}
-    \step{Throttle: reduce to 2500\,RPM}
+  \decision{LANE Checks}
+    \step{Throttle: set to 2500\,RPM}
     \step{LANE A:  OFF}
     \step{Max. vary ${\pm}$250\,RPM (aft. 15\,sec.)}
     \step{Check Engine Params in Limits!}
@@ -148,7 +138,9 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
     \step{Max. vary ${\pm}$250\,RPM (aft. 15\,sec.)}
     \step{Check Engine Params in Limits!}
     \step{LANE B:  ON (wait 3\,sec.)}
-  \item{Propeller Control}{checked}
+  \decision{Propeller Check}
+    \step{Throttle: set to 4700\,RPM}
+    \step{Propeller Control: CHECKED}
     \hint{Cycle 3 times. Move lever SLOWLY}
     \hint{backwards, but fast forward.}
   \item{Throttle}{IDLE CHECK}
@@ -165,10 +157,6 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
     \hint{Store pin in middle compartment!}
   \item{Engine Instruments}{checked}
   \item{Flaps}{FLAPS 1}
-
--- Continues next page!
-\end{checklist}
-\begin{checklist}{Continue: Before Take-Off}
   \decision{Autopilot}
     \step{Autopilot Switch: ON}
     \step{Engage, for each test}
@@ -184,8 +172,13 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
   \item{Landing-/Taxi-Light}{ON}
   \item{Brakes}{released}
   \item{Propeller Control}{full forward}
+  \decision{When lined-up:}
   \item{Throttle}{full power}
-  \item{Airspeed Indication}{checked: alive}
+  \decision{Engine Instruments:}
+    \step{RPM: min. 5700, max. 5800}
+    \step{Manifold Pressure: within LIMITS}
+    \step{Manifold Temp: Below 65\,$^{\circ}$C}
+  \item{Airspeed Indication}{comes alive}
   \decision{TAKE-OFF SPEEDS}
   \item{Nosewheel Unstick}{50\,KIAS}
   \item{Lift-Off}{60\,KIAS}
@@ -305,7 +298,8 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
   \item{ALT-C}{OFf}
     \hint{Check Volts M >= 13.4\,V!}
   \decision{min. 2\,min COOL-DOWN!}
-    \step{Use timer in EFIS!}
+    \step{Use timer in MFD!}
+    \step{Note down Total\,Hours from MFD!}
   \item{Lane A}{OFF}
   \item{after 2\,sec, LAMP:}{checked on}
   \item{Lane B}{OFF}
