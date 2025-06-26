@@ -4,7 +4,7 @@
 \begin{document}
 
 \title{D-ESSU  -  BR23  -  Bristell B23-915 IFR}
-\versionchecklist{EN-2.2.1}
+\versionchecklist{EN-3.1.5}
 \datechecklist{06/2025}
 
 \begin{checklist}{Before Engine Start}
@@ -67,11 +67,14 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
     \hint{Hold "Start Power", THEN press "START"}
     \hint{until Engine fires. Then release}
     \hint{Start-Button and "Start Power".}
-  \item{Throttle} {2500\,RPM}
+  \item{Throttle} {2000\,RPM}
   \item{Oil Pressure}{Checked}
-  \item{LANE A / B}{Ind. Lamp OFF}
-    \hint{Both switches remain ON!}
-    \hint{The Indicator Lamps should go out.}
+  \item{LANE A/B Indicator Lamps}{OFF}
+    \hint{Both LANE SWITCHES remain ON!}
+    \hint{Only the Indicator Lamps should go out.}
+  \item{Throttle}{2500\,RPM for 10\,sec}
+    \hint{To engage/sync generators.}
+    \hint{Then back to 2000\,RPM}
   \item{Voltage M / Voltage B}{13.4 / 14.0\,V}
 \end{checklist}
 
@@ -85,9 +88,6 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
     \hint{Verify NOT on internal Battery}
   \item{Baro PFD + MFD}{set}
     \hint{StbyEFIS, GTN are synced. MFD isn't!}
-  \decision{Engine Warm-Up:}
-    \step{2500\,RPM until oil temp > 50\,$^{\circ}$C.}
-    \step{Then set throttle to IDLE.}
 \end{checklist}
 
 \begin{checklist}{Before Taxiing}
@@ -108,11 +108,12 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
 
 \begin{checklist}{Engine Run Up}
   \item{Parking Brake}{set}
-  \item{Oil Temperature}{min. 50\,$^{\circ}$C}
-  \item{Propeller Control}{fine}
-    \hint{fully forwaard}
   \item{Landing-/Taxi-Light}{as required}
     \hint{A/C standing still: Lights off!}
+  \decision{Engine Warm-Up:}
+    \step{2500\,RPM until oil temp > 50\,$^{\circ}$C.}
+  \item{Propeller Control}{fine}
+    \hint{Fully forward}
   \decision{Pump and Fuel Supply Check}
     \step{Throttle: 3000\,RPM}
     \step{AUX Pump: ON, pressuere in limits}
@@ -129,14 +130,14 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
 \begin{checklist}{Continue: Engine Run Up}
   \decision{LANE Checks}
     \step{Throttle: set to 2500\,RPM}
-    \step{LANE A:  OFF}
+    \step{LANE A Switch:  OFF}
     \step{Max. vary ${\pm}$250\,RPM (aft. 15\,sec.)}
     \step{Check Engine Params in Limits!}
-    \step{LANE A:  ON (wait 3\,sec.)}
-    \step{LANE B:  OFF}
+    \step{LANE A Switch:  ON (wait 3\,sec.)}
+    \step{LANE B Switch:  OFF}
     \step{Max. vary ${\pm}$250\,RPM (aft. 15\,sec.)}
     \step{Check Engine Params in Limits!}
-    \step{LANE B:  ON (wait 3\,sec.)}
+    \step{LANE B Switch:  ON (wait 3\,sec.)}
   \decision{Propeller Check}
     \step{Throttle: set to 4000\,RPM}
     \step{Propeller Control: CHECKED}
@@ -155,16 +156,18 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
   \item{AEPS System}{unlocked}
     \hint{Store pin in middle compartment!}
   \item{Engine Instruments}{checked}
-  \item{Flaps}{FLAPS 1}
   \decision{Autopilot}
     \step{Autopilot Switch: ON}
     \step{Engage, for each test}
     \step{Check if AP can be overpowered!}
     \step{Check AP Disconnect by:}
     \step{Any Trim input, AP-Disc. button.}
-  \item{Trim}{T/O Position}
   \item{Autopilot Switch}{OFF}
   \item{Autopilot Panel LEDs}{ALL OFF}
+  \item{Trim}{T/O Position}
+  \item{Flaps}{As Required}
+    \hint{\textbf{Flaps 0} recommended.}
+    \hint{Flaps 1 also possible - See AFM!}
 \end{checklist}
 
 \begin{checklist}{TAKE-OFF}
@@ -200,6 +203,7 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
   \item{AUX Pump}{off}
   \item{Fuel Pressure}{checked}
   \item{Landing Light}{As required}
+    \hint{Outside circuit or CTR: OFF}
 \end{checklist}
 
 \begin{checklist}{Cruise}
@@ -215,7 +219,6 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
   \decision{Changes in PWR:}
   \item{\textcolor{red}{Increase~~Power $\Uparrow$}}{1. RPM - 2. MAP}
   \item{\textcolor{blue}{Decrease~Power $\Downarrow$}}{1. MAP - 2. RPM}
-    
 \end{checklist}
 
 \begin{table}[!ht]
@@ -248,7 +251,7 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
   \item{Autopilot}{disengaged}
   \item{Autopilot Switch}{OFF}
   \item{Throttle}{as required}
-  \item{Speed}{83\,KIAS}
+  \item{Speed}{${\leq}$\,83\,KIAS}
   \item{Flaps}{FLAPS 1}
   \item{Trim}{as required}
   \item{Landing Light}{ON}
@@ -257,7 +260,8 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
   \item{Flaps}{FLAPS 2}
   \item{Speed}{65\,KIAS}
   \item{Trim}{As Required}
-  \item{Prop Control}{FINE (forward)}
+  \item{Propeller Control}{fine}
+    \hint{Fully forward}
   \item{Throttle}{SET}
     \step{Approx. 7\,inHG,}
     \step{Maint. RPM > 2600}
@@ -303,6 +307,7 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
   \item{after 2\,sec, LAMP:}{checked on}
   \item{Lane B}{OFF}
   \item{Main Fuel Pump}{Off}
+  \item{\textcolor{red}{Engine}}{HAS STOPPED}
   \item{Avionics}{OFF}
   \item{EFIS}{OFF}
   \item{GEN A/B}{OFF}
@@ -318,7 +323,7 @@ For usage of external Power,\\see notes in Handbook Cpt. 4.4.2
     \step{For short time parking only,}
     \step{for long time, use chocks!}
   \item{Canopy}{closed \& locked}
-  \decision{Aircraft SECURED}
+  \textbf{AIRCRAFT SECURED!}
 \end{checklist}
 
 
