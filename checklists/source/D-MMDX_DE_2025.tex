@@ -4,7 +4,7 @@
 \begin{document}
 
 \title{D-MMDX  -  C42  -  Ikarus C-42}
-\versionchecklist{DE-1.0.2} 
+\versionchecklist{DE-1.1.4} 
 \datechecklist{06/2025}
 
 \begin{checklist}{Informationen}
@@ -34,34 +34,34 @@
 \begin{checklist}{VOR dem Anlassen}
 	\item{Parkbremse}{gesetzt}
 	\item{Kraftstoffhahn}{offen}
-	\item{Avionik Kippschalter}{ALLE SCHALTER AUS}
+	\item{Kippschalter}{ALLE SCHALTER AUS}
 	\item{Rettugsgerät}{entsichert}
 	\item{Zündschlüssel}{im Zündschloss}
-	\item{MASTER / Zündschlüssel}{ein}
-	\item{Klappen}{ganz eingefahren}
+	\item{MASTER (Zündschlüssel)}{ein}
 \end{checklist}
 
 \begin{checklist}{Anlassen}
-	\item{Strobes (Blitz)}{AN}
-	\item{Benzinpumpe}{AN}
+	\item{STROBE LIGHT (Blitz)}{AN}
+	\item{AUX PUMP}{AN}
 	\item{Gashebel}{Leerlauf}
+	\item{Propellerbereich}{FREI}
 	\item{Choke}{nach bedarf}
 	  \step{Kaltstart: gezogen (halten)}
 	  \step{Warmstart: ohne Choke, etwas Gas}
-	\item{Propellerbereich}{FREI}
 	\item{Motorstart, per Knopf}{durchgeführt}
 	\item{Drehzahl}{ohne Choke: max. 2000\,RPM}
 	\item{Öldruck}{vorhanden}
-	\decision{Avionik (Kippschalter)}
-	  \step{XPDR, Horizont, Master Radio:  EINGESCHALTET}
-	  \item{Höhenmesser}{eingestellt}
+	\item{AUX PUMP}{AUS}
+	\item{Avionics / G5 Horizont}{EINGESCHALTET}
+	\item{Funkgerät \& Transponder}{EINGESCHALTET}
+	\item{Höhenmesser (2x)}{eingestellt}
 	  \hint{Analoger Höhenmesser und G5}
 \end{checklist}
 
 \begin{checklist}{Rollen}
 	\item{Drehzahl}{Leerlauf}
-	\item{Positionslichter (grün/rot)}{nach Bedarf}
-	\item{Scheinwerfer}{eingeschaltet}
+	\item{NAV Lights / Wing Strobes}{nach Bedarf}
+	\item{LDG Light}{eingeschaltet}
 	\item{Parkbremse}{geöffnet}
 	  \item{Bremsfunktion}{getestet}
 	  \hint{Rollen stets mit Schrittgeschwindigkeit}
@@ -69,9 +69,9 @@
 \end{checklist}
 
 \begin{checklist}{Am Rollhalt}
-	\item{Parkbremse}{gesetzt}
 	\item{Gas/Drehzahl}{Leerlauf}
-	\item{Scheinwerfer}{aus}
+	\item{Parkbremse}{gesetzt}
+	\item{LDG Light}{aus}
 	  \hint{Bei max. 2000\,RPM ausreichend warm}
 	  \hint{laufen lassen bis Öl-Temp. min. 50$^{\circ}$C.}
 	\item{Zündkreisprüfung}{durchgeführt}
@@ -83,9 +83,10 @@
 
 \begin{checklist}{Start / Abflug}
 	\decision{Zum Aufrollen:}
-	  \item{Scheinwerfer}{eingeschaltet}
+	  \item{LDG Light}{eingeschaltet}
+	  \item{Transponder Mode}{ACS}
 	  \item{Klappen}{nur für Kurzstart}
-	  \item{Benzinpumpe}{eingeschaltet}
+	  \item{AUX PUMP}{eingeschaltet}
 	    \hint{gem. Freigabe auf die Bahn aufrollen}
 	\decision{Auf der Bahn / zum START:}
 	  \item{Gashebel}{vollgas}
@@ -99,8 +100,8 @@
 	
 \begin{checklist}{Reiseflug}
 	\item{Klappen}{eingefahren}
-	\item{Scheinwerfer}{aus}
-	\item{Pumpe}{aus}
+	\item{LDG Light}{aus}
+	\item{AUX PUMP}{aus}
 	\decision{Leistungseinstellungen:}
 	  \step{Normaler Reiseflug:     4750 bis 5000\,RPM}
 	  \step{Schneller Reiseflug:     Bis max. 5300 RPM}
@@ -110,11 +111,11 @@
 \end{checklist}
 
 \begin{checklist}{Anflug / Landevorbereitung}
-	\item{Höhenmesser}{eingestellt}
+	\item{Höhenmesser (2x)}{eingestellt}
 	  \hint{Analoger Höhenmesser und G5}
 	\item{Fahrt/Geschw.}{Gem. Anflug}
 	\item{Höhe}{Gem. Anflug}
-	\item{Scheinwerfer}{eingeschaltet}
+	\item{LDG Light}{eingeschaltet}
 	\item{Klappen}{Nach Bedarf}
 	  \hint{Geschwindigkeit prüfen!}
 	  \hint{Max. 105\,km/h für Klappen.}
@@ -122,7 +123,7 @@
 \end{checklist}
 
 \begin{checklist}{Endanflug und Landung}
-	\item{Benzinpumpe}{eingeschaltet}
+	\item{AUX Pump}{eingeschaltet}
 	\item{Klappen}{nach Bedarf}
 	\item{Endanflug ohne Klappen}{110\,km/h}
 	\item{Endanflug mit Klappen}{80\,km/h}
@@ -130,7 +131,7 @@
 \end{checklist}
 
 \begin{checklist}{Abrollen}
-	\item{Benzinpumpe}{aus}
+	\item{AUX Pump}{aus}
 	\item{Landeklappen}{ganz eingefahren}
 	\item{Drehzahl}{nach Bedarf}
 	  \hint{Rollen gem. Freigaben, mit Schrittgeschwindigkeit.}
@@ -139,19 +140,20 @@
 \begin{checklist}{Abstellen}
 	\decision{An der Parkposition:}
 	  \item{Gashebel / Drehzahl}{Leerlauf}
-	  \item{Parkbremse}{fest}
-	  \item{Scheinwerfer}{aus}
-	  \item{XPDR, Funk, Horizont}{aus}
+	  \item{Parkbremse}{gesetzt}
+	  \item{LDG LIGHT}{aus}
+	  \item{Transponder, Funkgerät, G5}{aus}
 	  \item{Trimmung}{neutral}
 	  \item{Zündung (per Kippschalter L/R)}{aus}
 	    \step{Nacheinander; Ggf. auf Unregelm. achten. }
 	  
 	\decision{WENN MOTOR STEHT:}
-	  \item{Strobes (Blitz)}{aus}
-	  \item{MASTER / Zündschlüssel}{aus}
-	  \item{Zündschlüssel}{abgezogen}
-	  \item{Rettungsgerät}{gesichert}
-	  
+	\item{STROBE LIGHT (Blitz)}{aus}
+	\item{Kippschalter}{ALLE SCHALTER AUS}
+	\item{MASTER / Zündschlüssel}{aus}
+	\item{Zündschlüssel}{abgezogen}
+	\item{Rettungsgerät}{gesichert}
+    	  
 	\decision{Beim Aussteigen:}
 	  \item{Parkbremse}{nach Bedarf}
 	\decision{Muss rangiert werden?}
